@@ -11,7 +11,6 @@
 		5B3387A72577EC9B00BF835E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387A62577EC9B00BF835E /* SceneDelegate.swift */; };
 		5B3387A92577EC9B00BF835E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387A82577EC9B00BF835E /* ViewController.swift */; };
 		5B3387AE2577ECA000BF835E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3387AD2577ECA000BF835E /* Assets.xcassets */; };
-		5B3387B12577ECA000BF835E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3387AF2577ECA000BF835E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		5B3387A62577EC9B00BF835E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B3387A82577EC9B00BF835E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B3387AD2577ECA000BF835E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5B3387B02577ECA000BF835E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B3387B22577ECA000BF835E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +64,6 @@
 				5B3387A42577EC9B00BF835E /* AppDelegate.swift */,
 				5B3387A62577EC9B00BF835E /* SceneDelegate.swift */,
 				5B3387AD2577ECA000BF835E /* Assets.xcassets */,
-				5B3387AF2577ECA000BF835E /* LaunchScreen.storyboard */,
 				5B3387B22577ECA000BF835E /* Info.plist */,
 			);
 			path = Support;
@@ -129,7 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B3387B12577ECA000BF835E /* LaunchScreen.storyboard in Resources */,
 				5B3387AE2577ECA000BF835E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,17 +144,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5B3387AF2577ECA000BF835E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B3387B02577ECA000BF835E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5B3387B32577ECA000BF835E /* Debug */ = {
