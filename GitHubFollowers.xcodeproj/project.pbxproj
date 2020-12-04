@@ -12,6 +12,7 @@
 		5B3387AE2577ECA000BF835E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3387AD2577ECA000BF835E /* Assets.xcassets */; };
 		5B3387C12578A2AD00BF835E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387C02578A2AD00BF835E /* SearchVC.swift */; };
 		5B3387C42578A32900BF835E /* FavoriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387C32578A32900BF835E /* FavoriteListVC.swift */; };
+		5B3387C82579E00900BF835E /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387C72579E00800BF835E /* GFButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5B3387B22577ECA000BF835E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B3387C02578A2AD00BF835E /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		5B3387C32578A32900BF835E /* FavoriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListVC.swift; sourceTree = "<group>"; };
+		5B3387C72579E00800BF835E /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				5B3387C02578A2AD00BF835E /* SearchVC.swift */,
 				5B3387C32578A32900BF835E /* FavoriteListVC.swift */,
 				5B3387BB2577ECCB00BF835E /* Support */,
+				5B3387C72579E00800BF835E /* GFButton.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B3387C42578A32900BF835E /* FavoriteListVC.swift in Sources */,
+				5B3387C82579E00900BF835E /* GFButton.swift in Sources */,
 				5B3387C12578A2AD00BF835E /* SearchVC.swift in Sources */,
 				5B3387A52577EC9B00BF835E /* AppDelegate.swift in Sources */,
 				5B3387A72577EC9B00BF835E /* SceneDelegate.swift in Sources */,
