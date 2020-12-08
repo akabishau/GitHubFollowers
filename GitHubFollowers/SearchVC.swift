@@ -12,6 +12,8 @@ class SearchVC: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextFied = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    
+    var isUsernameEntered: Bool { return !usernameTextFied.text!.isEmpty }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +79,7 @@ class SearchVC: UIViewController {
     
     
     @objc func pushFollowerListVC() {
+        guard isUsernameEntered else { return }
         let followerListVC = FollowerListVC()
         followerListVC.username = usernameTextFied.text
         followerListVC.title = usernameTextFied.text
