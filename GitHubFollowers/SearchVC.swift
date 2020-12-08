@@ -19,6 +19,7 @@ class SearchVC: UIViewController {
         configureLogoImageVeiw()
         configureTextField()
         configureCallToActionButton()
+        createDismissKeyboardTapGesture()
     }
     
     
@@ -43,6 +44,7 @@ class SearchVC: UIViewController {
     
     
     func configureTextField() {
+        usernameTextFied.delegate = self
         view.addSubview(usernameTextFied)
         
         NSLayoutConstraint.activate([
@@ -64,5 +66,19 @@ class SearchVC: UIViewController {
             callToActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             callToActionButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+    
+    
+    func createDismissKeyboardTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        view.addGestureRecognizer(tapGesture)
+    }
+}
+
+extension SearchVC: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("pass data to the next screen")
+        return true
     }
 }
