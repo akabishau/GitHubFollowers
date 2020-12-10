@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B23B0D22581D81800080BF9 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */; };
 		5B3387A52577EC9B00BF835E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387A42577EC9B00BF835E /* AppDelegate.swift */; };
 		5B3387A72577EC9B00BF835E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387A62577EC9B00BF835E /* SceneDelegate.swift */; };
 		5B3387AE2577ECA000BF835E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3387AD2577ECA000BF835E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		5B3387A12577EC9B00BF835E /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3387A42577EC9B00BF835E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B3387A62577EC9B00BF835E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				5B3387BB2577ECCB00BF835E /* Support */,
 				5B3387C72579E00800BF835E /* GFButton.swift */,
 				5B3387CA2579E50200BF835E /* GFTextField.swift */,
+				5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				5B3387C42578A32900BF835E /* FavoriteListVC.swift in Sources */,
 				5B3387C82579E00900BF835E /* GFButton.swift in Sources */,
 				5B3387C12578A2AD00BF835E /* SearchVC.swift in Sources */,
+				5B23B0D22581D81800080BF9 /* GFTitleLabel.swift in Sources */,
 				5B3387CE257F427000BF835E /* FollowerListVC.swift in Sources */,
 				5B3387A52577EC9B00BF835E /* AppDelegate.swift in Sources */,
 				5B3387A72577EC9B00BF835E /* SceneDelegate.swift in Sources */,
