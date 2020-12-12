@@ -51,6 +51,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B23B0E2258483FB00080BF9 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5B3387C02578A2AD00BF835E /* SearchVC.swift */,
+				5B3387CD257F427000BF835E /* FollowerListVC.swift */,
+				5B3387C32578A32900BF835E /* FavoriteListVC.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5B23B0E42584842F00080BF9 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				5B23B0D72581E8A600080BF9 /* GFAlertVC.swift */,
+				5B3387C72579E00800BF835E /* GFButton.swift */,
+				5B3387CA2579E50200BF835E /* GFTextField.swift */,
+				5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */,
+				5B23B0D42581DA1700080BF9 /* GFBodyLabel.swift */,
+				5B23B0DF258315D600080BF9 /* GFContainerView.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		5B23B0E62584845300080BF9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5B23B0DA25830A2300080BF9 /* UIViewController+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		5B3387982577EC9B00BF835E = {
 			isa = PBXGroup;
 			children = (
@@ -70,17 +101,10 @@
 		5B3387A32577EC9B00BF835E /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				5B3387C02578A2AD00BF835E /* SearchVC.swift */,
-				5B3387CD257F427000BF835E /* FollowerListVC.swift */,
-				5B3387C32578A32900BF835E /* FavoriteListVC.swift */,
+				5B23B0E62584845300080BF9 /* Extension */,
+				5B23B0E42584842F00080BF9 /* Custom View */,
+				5B23B0E2258483FB00080BF9 /* Screen */,
 				5B3387BB2577ECCB00BF835E /* Support */,
-				5B3387C72579E00800BF835E /* GFButton.swift */,
-				5B3387CA2579E50200BF835E /* GFTextField.swift */,
-				5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */,
-				5B23B0D42581DA1700080BF9 /* GFBodyLabel.swift */,
-				5B23B0DF258315D600080BF9 /* GFContainerView.swift */,
-				5B23B0D72581E8A600080BF9 /* GFAlertVC.swift */,
-				5B23B0DA25830A2300080BF9 /* UIViewController+Ext.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
