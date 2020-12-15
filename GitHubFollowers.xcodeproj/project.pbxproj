@@ -20,6 +20,8 @@
 		5B3387C82579E00900BF835E /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387C72579E00800BF835E /* GFButton.swift */; };
 		5B3387CB2579E50200BF835E /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387CA2579E50200BF835E /* GFTextField.swift */; };
 		5B3387CE257F427000BF835E /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3387CD257F427000BF835E /* FollowerListVC.swift */; };
+		5B71BCB225886DEF007AA659 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71BCB125886DEF007AA659 /* Follower.swift */; };
+		5B71BCB525886F0E007AA659 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71BCB425886F0E007AA659 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		5B3387C72579E00800BF835E /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		5B3387CA2579E50200BF835E /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		5B3387CD257F427000BF835E /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		5B71BCB125886DEF007AA659 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		5B71BCB425886F0E007AA659 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		5B3387A32577EC9B00BF835E /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				5B71BCB025886DD8007AA659 /* Model */,
 				5B23B0E62584845300080BF9 /* Extension */,
 				5B23B0E42584842F00080BF9 /* Custom View */,
 				5B23B0E2258483FB00080BF9 /* Screen */,
@@ -118,6 +123,15 @@
 				5B3387B22577ECA000BF835E /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		5B71BCB025886DD8007AA659 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B71BCB125886DEF007AA659 /* Follower.swift */,
+				5B71BCB425886F0E007AA659 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +208,9 @@
 				5B23B0DB25830A2400080BF9 /* UIViewController+Ext.swift in Sources */,
 				5B23B0D82581E8A600080BF9 /* GFAlertVC.swift in Sources */,
 				5B3387C12578A2AD00BF835E /* SearchVC.swift in Sources */,
+				5B71BCB525886F0E007AA659 /* User.swift in Sources */,
 				5B23B0D52581DA1700080BF9 /* GFBodyLabel.swift in Sources */,
+				5B71BCB225886DEF007AA659 /* Follower.swift in Sources */,
 				5B23B0D22581D81800080BF9 /* GFTitleLabel.swift in Sources */,
 				5B3387CE257F427000BF835E /* FollowerListVC.swift in Sources */,
 				5B3387A52577EC9B00BF835E /* AppDelegate.swift in Sources */,
