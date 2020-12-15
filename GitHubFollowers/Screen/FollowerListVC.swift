@@ -15,6 +15,11 @@ class FollowerListVC: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
-        navigationController?.isNavigationBarHidden = false
+    }
+    
+    // to make sliding animation work correctly and smoothly
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 }
