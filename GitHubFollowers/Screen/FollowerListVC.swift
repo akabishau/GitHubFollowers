@@ -11,10 +11,14 @@ class FollowerListVC: UIViewController {
     
     var username: String!
     
+    var collectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
+        configureCollectionView()
         
         NetworkManager.shared.getFollowers(for: username, page: 1) { result in
             
@@ -31,5 +35,13 @@ class FollowerListVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    
+    private func configureCollectionView() {
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewLayout())
+        view.addSubview(collectionView)
+        collectionView.backgroundColor = .systemGray
+        collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseId)
     }
 }
