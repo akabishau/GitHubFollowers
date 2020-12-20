@@ -9,9 +9,13 @@ import UIKit
 
 class FollowerListVC: UIViewController {
     
+    
     var username: String!
+    var followers: [Follower] = []
     
     var collectionView: UICollectionView!
+    enum Section { case main }
+    var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
     
     
     override func viewDidLoad() {
@@ -19,16 +23,8 @@ class FollowerListVC: UIViewController {
         
         view.backgroundColor = .systemBackground
         configureCollectionView()
-        
-        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
-            
-            switch result {
-            case .success(let followers):
-                print(followers)
-            case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Bad Stuff Happened", message: error.rawValue, buttonTitle: "Ok")
-            }
-        }
+        configureDataSource()
+        getFollowers()
     }
     
     // to make sliding animation work correctly and smoothly
@@ -58,5 +54,36 @@ class FollowerListVC: UIViewController {
         flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
         flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 40)
         return flowLayout
+    }
+    
+    
+    private func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, follower) -> UICollectionViewCell? in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseId, for: indexPath) as! FollowerCell
+            cell.set(follower: follower)
+            return cell
+        })
+    }
+    
+    
+    private func updateData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(followers, toSection: .main)
+        DispatchQueue.main.async { self.dataSource.apply(snapshot, animatingDifferences: true, completion: nil) }
+    }
+    
+    
+    private func getFollowers() {
+        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+            
+            switch result {
+            case .success(let followers):
+                self.followers = followers
+                self.updateData()
+            case .failure(let error):
+                self.presentGFAlertOnMainThread(title: "Bad Stuff Happened", message: error.rawValue, buttonTitle: "Ok")
+            }
+        }
     }
 }
