@@ -65,6 +65,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B28664825CB9D0A00DE9578 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B23B0DF258315D600080BF9 /* GFAlertContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B28664925CB9D1400DE9578 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5B3387C72579E00800BF835E /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		0B28664A25CB9D2200DE9578 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				5B71BCC4258C6C19007AA659 /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		0B28664B25CB9D2A00DE9578 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				5B3387CA2579E50200BF835E /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		0B28664C25CB9D4000DE9578 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */,
+				5B23B0D42581DA1700080BF9 /* GFBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		0B28664D25CB9DAF00DE9578 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B23B0D72581E8A600080BF9 /* GFAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		5B23B0E2258483FB00080BF9 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,13 +127,12 @@
 		5B23B0E42584842F00080BF9 /* Custom View */ = {
 			isa = PBXGroup;
 			children = (
-				5B23B0D72581E8A600080BF9 /* GFAlertVC.swift */,
-				5B3387C72579E00800BF835E /* GFButton.swift */,
-				5B3387CA2579E50200BF835E /* GFTextField.swift */,
-				5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */,
-				5B23B0D42581DA1700080BF9 /* GFBodyLabel.swift */,
-				5B23B0DF258315D600080BF9 /* GFAlertContainerView.swift */,
-				5B71BCC4258C6C19007AA659 /* GFAvatarImageView.swift */,
+				0B28664D25CB9DAF00DE9578 /* ViewControllers */,
+				0B28664C25CB9D4000DE9578 /* Labels */,
+				0B28664B25CB9D2A00DE9578 /* TextFields */,
+				0B28664A25CB9D2200DE9578 /* ImageViews */,
+				0B28664925CB9D1400DE9578 /* Buttons */,
+				0B28664825CB9D0A00DE9578 /* Views */,
 				5B71BCC0258C6B25007AA659 /* Cell */,
 			);
 			path = "Custom View";
