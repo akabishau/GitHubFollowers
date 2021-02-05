@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B28665025CBA09600DE9578 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B28664F25CBA09600DE9578 /* GFEmptyStateView.swift */; };
 		5B23B0D22581D81800080BF9 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */; };
 		5B23B0D52581DA1700080BF9 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23B0D42581DA1700080BF9 /* GFBodyLabel.swift */; };
 		5B23B0D82581E8A600080BF9 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23B0D72581E8A600080BF9 /* GFAlertVC.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B28664F25CBA09600DE9578 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		5B23B0D12581D81800080BF9 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		5B23B0D42581DA1700080BF9 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		5B23B0D72581E8A600080BF9 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				5B23B0DF258315D600080BF9 /* GFAlertContainerView.swift */,
+				0B28664F25CBA09600DE9578 /* GFEmptyStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				5B3387C82579E00900BF835E /* GFButton.swift in Sources */,
 				5B23B0DB25830A2400080BF9 /* UIViewController+Ext.swift in Sources */,
 				5B23B0D82581E8A600080BF9 /* GFAlertVC.swift in Sources */,
+				0B28665025CBA09600DE9578 /* GFEmptyStateView.swift in Sources */,
 				5B3387C12578A2AD00BF835E /* SearchVC.swift in Sources */,
 				5B71BCB525886F0E007AA659 /* User.swift in Sources */,
 				5B71BCC2258C6B43007AA659 /* FollowerCell.swift in Sources */,
